@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"="Interview Task" />
+    <title>Interview Task</title>
+    <style></style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--start Fixed Menu-->
+    <div class="fixed-menu position-fixed text-center">
+        <i class="fas fa-bars skin-color main-color"></i>
+        <a href="index.html" class="sec-bg admin-link text-white font-weight-bold active"> Question Bank</a>
+        <a href="index.html" class="sec-bg admin-link text-white font-weight-bold active">  Dynamic Forms</a>
+    </div>
+    <!--End Fixed Menu-->
+    <!--Start Navbar -->
+    <nav class="navbar bg-dark text-center">
+        <div class="container">
+            <a class="navbar-brand text-white m-auto" href="#">Interview Task</a>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- *********************************Start Dynamic Forms ********************************* -->
+    <section class="dynamic-form d-flex align-items-center justify-content-center">
+        <div class="w-80">
+            <h2 class="text-center main-color font-weight-bold mb-5">Dynamic Forms</h2>
+            <div class="container">
+                <table class="table text-center">
+                    <tbody class="box">
+                        <tr>
+                            <td><input class="form-control" type="text"></td>
+                            <td><input class="form-control" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-control" type="text"></td>
+                            <td><input class="form-control" type="text"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="addArrow()" class="btn btn-info">Add Row</button>
+                <button onclick="addCol()" class="btn btn-success">Add Column</button>
+                <button onclick="deleteRow()" class="btn btn-danger">Delete Row</button>
+                <button onclick="deleteCol()" class="btn btn-danger">Delete Column</button>
+            </div>
+        </div>
+    </section>
+    <!-- *********************************End Dynamic Form ********************************* -->
+
+
+    <!--start footer.........-->
+    <footer class="d-flex align-items-center justify-content-center mt-5">
+        <div class="container p-2 h-100 ">
+            <div class="text-center">
+                Made By <i class="fas fa-heart"></i> Hala Salah
+            </div>
+        </div>
+    </footer>
+    <!--end footer...........-->
+
+    <script src="js/jquery-3.4.1.min.js "></script>
+    <script src="js/dinamic.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+/* Start Main Rules */
+
+:root {
+    --main-color: #0dcaf0;
+    /* --transparent-color: rgb(243 243 243 / 50%); */
+}
+
+button:focus {
+    outline: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    transition: all .4s ease-in-out
+}
+
+.main-h {
+    padding: 10px;
+    color: #fff;
+    max-width: 70%;
+    margin: 40px auto 60px;
+    border-radius: 20px;
+}
+
+section {
+    padding: 70px 0px;
+}
+
+.sec-color {
+    color: #140f0f !important;
+}
+
+.main-color {
+    color: #0dcaf0 !important;
+}
+
+.main-bg {
+    background-color: #0dcaf0 !important;
+}
+
+.sec-bg {
+    background-color: #0dcaf0 !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+.main-head {
+    margin: 10px auto 60px;
+}
+
+.main-head h2 {
+    display: inline-block;
+    border-bottom: 4px solid var(--main-color);
+    padding: 20px;
+}
+
+.fa-bell {
+    right: 20px;
+    top: 24px;
+    font-size: 25px;
+    color: #140f0f;
+}
+
+.correct,
+.wrong {
+    transition: all .4s ease-in-out;
+    font-weight: bold;
+    color: #fff;
+}
+
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
+
+input[type="radio"] {
+    margin-right: 15px;
+}
+
+
+/* End Main Rules */
+
+
+/* Start Navbar */
+
+.navbar {
+    padding-top: 12px 0px;
+}
+
+.navbar .navbar-brand {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+/* End Navbar */
+
+
+/* Start Registrantion Form */
+
+#labelCorrect {
+    background-color: var(--main-color);
+}
+
+
+/* End Registrantion Form */
+
+
+/* Start Dynamic Forms */
+
+.dynamic-form {
+    min-height: 80vh;
+}
+
+@media(max-width: 767.98px) {
+    .dynamic-form .container {
+        overflow-x: scroll;
+    }
+}
+
+
+/* End Dynamic Forms */
+
+
+/*start footer*/
+
+footer {
+    color: var(--main-color);
+    background-color: #140f0f;
+}
+
+
+/*End footer*/
+
+
+/* ********************************* Start Fixed Menu  **********************************/
+
+.fixed-menu {
+    padding: 30px 20px 20px;
+    z-index: 9999;
+    background-color: #222;
+    color: #fff;
+    height: 100%;
+    left: -194px;
+    top: 0px
+}
+
+.fixed-menu a {
+    border: 1px solid var(--main-color);
+}
+
+.fixed-menu i {
+    cursor: pointer;
+    font-size: 28px;
+    margin-top: 6px;
+    position: absolute;
+    right: -38px;
+    background-color: #222;
+    top: 11%;
+    padding: 10px;
+}
+
+
+/* End Fixed Menu*/
+
+
+/* ********************************* Start Admin Page ********************************* */
+
+.admin-link {
+    transition: all .4s ease-in-out;
+    border-color: var(--main-color);
+    padding: 10px 0px;
+    width: 150px;
+    border-radius: 20px;
+    margin: 15px auto;
+    display: block;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+.admin-link:hover,
+.admin-link.active {
+    background-color: var(--main-color) !important;
+    border-color: #140f0f;
+    color: #fff
+}
+
+.admin-link:focus {
+    outline: none;
+}
+
+.admin section:not(.active) {
+    display: none;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"="Interview Task" />
+    <title>Interview Task</title>
+    <style></style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--start Fixed Menu-->
+    <div class="fixed-menu position-fixed text-center">
+        <i class="fas fa-bars skin-color main-color"></i>
+        <a href="index.html" class="sec-bg admin-link text-white font-weight-bold active"> Question Bank</a>
+        <a href="dynamicForms.html" class="sec-bg admin-link text-white font-weight-bold active">  Dynamic Formss</a>
+    </div>
+    <!--End Fixed Menu-->
+    <!--Start Navbar -->
+    <nav class="navbar bg-dark text-center">
+        <div class="container">
+            <a class="navbar-brand text-white m-auto" href="#">Interview Task</a>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- *********************************Start Registrantion Form For Questions  ********************************* -->
+    <section class="registrantion-form">
+        <h2 class="text-center main-color font-weight-bold">Question Bank</h2>
+        <div class="container">
+            <div style="width: 80%; margin:50px auto ">
+                <div class="form-group mt-3">
+                    <label for="question" class="font-weight-bold">Enter Question Title</label>
+                    <input type="text" class="form-control" id="question">
+                </div>
+                <div class="form-group  mt-3">
+                    <input type="radio" name="correct" value="one" class="correct" onchange="getValue(this)">
+                    <label for="ans1" class="font-weight-bold">Enter First Answer</label>
+                    <input type="text" class="form-control" name="" id="ans1">
+                </div>
+                <div class="form-group  mt-3">
+                    <input type="radio" name="correct" value="two" class="correct" onchange="getValue(this)">
+                    <label for="ans2" class="font-weight-bold">Enter Second Answer</label>
+                    <input type="text" class="form-control" name="" id="ans2">
+                </div>
+                <div class="form-group  mt-3">
+                    <input type="radio" name="correct" value="three" class="correct" onchange="getValue(this)">
+                    <label for="ans3" class="font-weight-bold">Enter Third Answer</label>
+                    <input type="text" class="form-control" name="" id="ans3">
+                </div>
+                <div class="form-group  mt-3">
+                    <input type="radio" name="correct" value="four" class="correct" onchange="getValue(this)">
+                    <label for="ans4" class="font-weight-bold">Enter Fourth Answer</label>
+                    <input type="text" class="form-control" name="" id="ans4">
+                </div>
+
+                <button class="btn btn-info" onclick="questionBank();"> Register</button>
+            </div>
+        </div>
+    </section>
+    <!-- *********************************End Registrantion Form For Questions  ********************************* -->
+
+    <!--   Start  Questions Table -->
+    <div class="container" style="overflow-x: scroll;">
+        <table class="table text-center">
+            <thead>
+                <th>Quetion</th>
+                <th>Answer 1</th>
+                <th>Answer 2</th>
+                <th>Answer 3</th>
+                <th>Answer 4</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+
+
+            </tbody>
+        </table>
+    </div>
+    <!--   End  Questions Table -->
+    <!--start footer.........-->
+    <footer class="d-flex align-items-center justify-content-center mt-5">
+        <div class="container p-2 h-100 ">
+            <div class="text-center">
+                Made By <i class="fas fa-heart"></i> Hala Salah
+            </div>
+        </div>
+    </footer>
+    <!--end footer...........-->
+
+    <script src="js/jquery-3.4.1.min.js "></script>
+    <script src="js/main.js "></script>
+    <script src="js/dinamic.js"></script>
+</body>
+
+</html>
